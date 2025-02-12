@@ -8,75 +8,44 @@
   </head>
   <body>
     <!-- Header section -->
-    <header id="header">
-      <div id="header-wrapper">
-        <!-- logo wrapper -->
-        <div class="logo-wrapper">
-          <img src="./images/logo.png" alt="logo" />
-        </div>
-
-        <!-- Nav section -->
-        <div class="nav-wrapper">
-          <nav>
-            <ul>
-              <li>
-                Home
-                <ul style="display: none">
-                  <li>Home One</li>
-                  <li>Home Two</li>
-                </ul>
-              </li>
-
-              <li>About</li>
-
-              <li>
-                Events
-                <ul style="display: none">
-                  <li>Event Gride</li>
-                  <li>Event Slider</li>
-                  <li>Event Details</li>
-                </ul>
-              </li>
-
-              <li>
-                Spekars
-                <ul style="display: none">
-                  <li>Spekars Gride</li>
-                  <li>Spekars Topbar</li>
-                  <li>Spekars Details</li>
-                </ul>
-              </li>
-
-              <li>
-                Pages
-                <ul style="display: none">
-                  <li>Schedule</li>
-                  <li>Gallary</li>
-                  <li>FAQ</li>
-                  <li>404</li>
-                </ul>
-              </li>
-
-              <li>
-                Blog
-                <ul style="display: none">
-                  <li>Blog Grid</li>
-                  <li>Blog Sidebar</li>
-                  <li>Blog Standert</li>
-                  <li>Blog Details</li>
-                </ul>
-              </li>
-
-              <li>Contact</li>
-            </ul>
-          </nav>
-
-          <!-- Ticked Btn -->
-          <div class="nav-btn">
-            <button type="submit">Get Ticket</button>
-          </div>
+    <div class="topnav" id="myTopnav">
+      <div class="logo">
+        <a href="#home" class="active">Home</a>
+      </div>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Dropdown
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
         </div>
       </div>
-    </header>
+      <a href="#about">About</a>
+      <a
+        href="javascript:void(0);"
+        style="font-size: 15px"
+        class="icon"
+        onclick="myFunction()"
+        >&#9776;</a
+      >
+    </div>
+
+    <!-- Script file -->
+    <script src="./main.js"></script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
   </body>
 </html>
