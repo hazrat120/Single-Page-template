@@ -1,0 +1,30 @@
+:root {
+  --primary-color: #ce1446;
+  --secondry-color: #2d373c;
+  --text-color: #515154;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+#header {
+  background: transparent;
+  position: static;
+}
+
+#header-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-wrapper nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
